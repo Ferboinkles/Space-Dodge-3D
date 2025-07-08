@@ -3,8 +3,8 @@ import random
 
 # Setup scene
 scene.background = color.black
-scene.width = 800
-scene.height = 600
+scene.width = 801
+scene.height = 601
 scene.title = "Asteroid Dodger"
 scene.forward = vector(0, 0, 1)
 
