@@ -13,7 +13,7 @@ scene.camera.pos = vector(0, 0, 0)
 scene.camera.axis = vector(0, 0, 1)
 
 # Starfield
-for _ in range(30000):
+for _ in range(300):
     sphere(pos=vector(random.uniform(-100,100),
                       random.uniform(-100,100),
                       random.uniform(-100,100)),
