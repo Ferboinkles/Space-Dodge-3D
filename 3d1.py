@@ -69,7 +69,7 @@ def keydown(evt):
 
 def keyup(evt):
     global move_direction
-    if evt.key in ['left', 'right']:
+    if evt.key in ['a', 'd']:
         move_direction = 0
 
 scene.bind('keydown', keydown)
