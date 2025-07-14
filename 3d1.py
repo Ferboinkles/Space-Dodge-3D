@@ -62,10 +62,10 @@ move_direction = 0
 
 def keydown(evt):
     global move_direction
-    if evt.key == 'left':
-        move_direction = -1
-    elif evt.key == 'right':
-        move_direction = 1
+    if evt.key == 'a':
+        move_direction = -0.2
+    elif evt.key == 'd':
+        move_direction = 0.2
 
 def keyup(evt):
     global move_direction
