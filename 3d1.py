@@ -4,7 +4,7 @@ import random
 # Scene setup
 scene.width = 800
 scene.height = 600
-scene.title = "🚀 Dodge the Asteroids!"
+scene.title = "Space Dodge!"
 scene.background = color.black
 scene.camera.pos = vector(0, 1, -8)       # Zoomed-in starting position
 scene.camera.axis = vector(0, -0.5, 8)    # Looking forward (+z)
