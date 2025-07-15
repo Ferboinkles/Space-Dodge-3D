@@ -1,13 +1,14 @@
-from vpython import *
 import random
+
+from vpython import *
 
 # Scene setup
 scene.width = 800
 scene.height = 600
 scene.title = "Space Dodge!"
 scene.background = color.black
-scene.camera.pos = vector(0, 1, -8)       # Zoomed-in starting position
-scene.camera.axis = vector(0, -0.5, 8)    # Looking forward (+z)
+scene.camera.pos = vector(0, 1, -8)  # Zoomed-in starting position
+scene.camera.axis = vector(0, -0.5, 8)  # Looking forward (+z)
 
 # Rocket parts
 rocket_base = vector(0, 0, 0)
@@ -60,6 +61,7 @@ for _ in range(10):
 # Controls
 move_direction = 0
 
+
 def keydown(evt):
     global move_direction
     if evt.key == 'a':
@@ -67,10 +69,12 @@ def keydown(evt):
     elif evt.key == 'd':
         move_direction = 0.2
 
+
 def keyup(evt):
     global move_direction
     if evt.key in ['a', 'd']:
         move_direction = 0
+
 
 scene.bind('keydown', keydown)
 scene.bind('keyup', keyup)
